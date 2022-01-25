@@ -9,7 +9,7 @@ b = pickle.load(open('suggest.pkl', 'rb'))
 m = pickle.load(open('model.pkl', 'rb'))
 
 name = st.text_input("Enter the book you have read.")
-
+model=NearestNeighbors(algorithm='brute', metric='cosine') ## model
 
 def recommend_books(book_name):
     similar_books = []
