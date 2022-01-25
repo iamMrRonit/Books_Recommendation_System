@@ -1,6 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
+from sklearn.neighbors import NearestNeighbors
 
 st.header("Book Recommendation System")
 a = pickle.load(open('bk.pkl', 'rb'))
